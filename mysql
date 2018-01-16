@@ -1,0 +1,4 @@
+# 给`username`用户授予可以用任意IP带密码`password`访问数据库
+GRANT ALL PRIVILEGES ON *.* TO 'username'@'%'IDENTIFIED BY 'password' WITH GRANT OPTION; 
+# 刷新权限
+FLUSH PRIVILEGES;
